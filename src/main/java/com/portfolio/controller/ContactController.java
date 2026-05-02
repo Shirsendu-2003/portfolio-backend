@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/contact")
-@CrossOrigin
+@CrossOrigin(origins = "https://shirsendu-pramanik.vercel.app")
 @RequiredArgsConstructor
 public class ContactController {
 

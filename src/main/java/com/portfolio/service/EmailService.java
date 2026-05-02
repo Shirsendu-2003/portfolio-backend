@@ -48,7 +48,7 @@ public class EmailService {
 
                         <!-- BUTTON -->
                         <div style="text-align:center; margin-top:20px;">
-                            <a href="http://localhost:3000/dashboard"
+                            <a href="https://shirsendu-pramanik.vercel.app"
                                style="background:#4f46e5;
                                       color:white;
                                       padding:12px 20px;

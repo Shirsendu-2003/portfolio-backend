@@ -18,18 +18,18 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) {
 
         // 🔍 check if user already exists
-        if (userRepo.findByEmail("admin@gmail.com").isEmpty()) {
+        if (userRepo.findByEmail("pramanikshirsendu6@gmail.com").isEmpty()) {
 
             User user = new User();
-            user.setName("Admin");
-            user.setEmail("admin@gmail.com");
+            user.setName("Shirsendu");
+            user.setEmail("pramanikshirsendu6@gmail.com");
 
             // 🔐 always encode password
-            user.setPassword(passwordEncoder.encode("admin123"));
+            user.setPassword(passwordEncoder.encode("Sourav@09"));
 
             userRepo.save(user);
 
-            System.out.println("✅ Default user created: admin@gmail.com");
+            System.out.println("✅ Default user created: pramanikshirsendu6@gmail.com");
         }
     }
 }

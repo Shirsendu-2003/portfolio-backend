@@ -28,7 +28,8 @@ protected void doFilterInternal(HttpServletRequest request,
     // ✅ FIXED: correct path matching
     if (path.startsWith("/api/contact") ||
         path.startsWith("/api/auth") ||
-        path.startsWith("/api/stats")) {
+        path.startsWith("/api/stats") ||
+        path.startsWith("/api/contact/reply")) {
 
         filterChain.doFilter(request, response);
         return;

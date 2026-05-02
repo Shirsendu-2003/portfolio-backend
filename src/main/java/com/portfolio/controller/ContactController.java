@@ -50,11 +50,8 @@ public class ContactController {
     }
 
     @PostMapping("/reply")
-    public void sendReply(@RequestBody ReplyRequest req) {
-        emailService.sendReply(
-                req.getEmail(),
-                req.getSubject(),
-                req.getMessage()
-        );
-    }
+public ResponseEntity<String> sendReply(@RequestBody ReplyRequest req) {
+    emailService.sendReply(req.getEmail(), req.getSubject(), req.getMessage());
+    return ResponseEntity.ok("Email sent successfully");
+}
 }
